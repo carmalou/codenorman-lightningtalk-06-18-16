@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+    class: center, middle
+
+    # "Weird" Stuff in JavaScript
+
+    ---
+    layout: false
+    class: center, middle
+    # Carmen Long
+    ## Twitter: [@carmalou](https://twitter.com/carmalou)
+    ## Blog: [carmalou.com](http://carmalou.com)
+    ## TwisterJS: [twisterjs.org](http://twisterjs.org)
+
+    ???
+    My name is Carmen and I'm an ionic dev here in okc. In my spare time I am working on a project called TwisterJS, a series of apps to teach kids about tech. Check that out!
+
+    ---
+    class: center, middle
+
+    # Questions?
+
+    # Interrupt me!
+
+    ---
+    class: left, middle
+
+    # Agenda
+
+    1. Truthy && Falsey
+    2. == vs. ===
+    3. '2' + 2 vs. 2 + 2 vs. '2' + '2'
+    4. Hoisting
+    5. "Private" functions in JavaScript
+
+    ---
+    class: center, middle
+
+    # Truthy && Falsey
+
+    ---
+    class: left, middle
+
+    ### In JavaScript there are values that are considered truthy and falsey. These aren't real types, but are interpreted to be either truth or false for the sake of an evaluation.
+
+    ---
+    class: center, middle
+
+    # == vs. ===
+
+    ---
+    class: left, middle
+
+    ### Another interesting tidbit in JavaScript is the ability to use === (triple equals). In most languages you can only use == (double equals). In JavaScript double equals checks for equality, but does not check for type. === (triple equals) will check for equality as well as type.
+
+    ---
+    class: center, middle
+
+    # '2' + 2 vs. 2 + 2 vs. '2' + '2'
+
+    ---
+    class: left, middle
+
+    ### JavaScript will take advantage of type conversion with the previous example. Because the plus sign is used for addition as well as concatenation in JavaScript, our example from before can have some interesting consequences.
+
+    ---
+    class: center, middle
+
+    # Hoisting
+
+    ---
+    class: left, middle
+
+    ### Hoisting takes place when you have a declared variable used multiple times throughout a function and the value of the variable changes. JavaScript will take the last value associated with the variable and uses that as the value.
+
+    ---
+    class: center, middle
+
+    # "Private" functions in JavaScript and Scope
+
+    ---
+    class: left, middle
+
+    ### JavaScript doesn't have "private" functions like other languages do. However with the way functions are scoped to their parent function, the result can act in the same way as a private function.
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
